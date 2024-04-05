@@ -1,7 +1,6 @@
 import discord
 from bot_logic import *
 from discord.ext import commands
-from dtoken import token
 
 #yetkiler
 intents = discord.Intents.default()
@@ -42,4 +41,4 @@ async def joined(ctx, member: discord.Member):
     """Says when a member joined."""
     await ctx.send(f'{member.name} joined {discord.utils.format_dt(member.joined_at)}')
 
-bot.run(token)
+bot.run("your token here")
