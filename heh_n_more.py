@@ -1,5 +1,5 @@
 import discord
-from bot_logic import *
+from botlogic import *
 from discord.ext import commands
 
 #yetkiler
