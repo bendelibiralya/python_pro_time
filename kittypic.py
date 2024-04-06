@@ -16,5 +16,5 @@ async def kedy(ctx):
         pickitty = discord.File(f)
     await ctx.send("KEDY!")
     await ctx.send(file=pickitty)
-
+#you can find the cat images i used in '!(kittyimages_link)' in my profile
 bot.run("your token here")
