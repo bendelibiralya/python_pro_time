@@ -26,6 +26,6 @@ async def uzgunkedy(ctx):
         uzgunfoti = discord.File(f)
     await ctx.send("SAD!")
     await ctx.send(file=uzgunfoti)
-#sad kitty images r on my account under the name "!(sadcatimages_link)"
+#sad kitty images r on my account under the name '!(sadcatimages_link)'
 
 bot.run("your token here")
