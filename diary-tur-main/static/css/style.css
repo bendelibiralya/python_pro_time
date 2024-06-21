@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #8FE7F5;        /* kaydırma çubuğun içindeki oynattığın  kısmın rengi */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #FBF2C0;    /* kaydırma çubuğunun rengi */
+    border-radius: 20px;       /* kaydırma çubuğunun yuvarlaklığı */
+    border: none;
+  }
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #8FE7F5; 
+    color: #F5A3B0;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+
+img {
+    object-fit: contain;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    margin-bottom: 30px;
+}
+
+.main-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.main__title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.cards-list {
+    display: flex;
+    padding: 0 5%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    column-gap: 50px;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    transition: 0.2s;
+    background: #7880B5; /* kayıtlı notların kayıtlar ekranında gözüktüğü kutucukların rengi */
+    border-radius: 50px; /* kayıtlı notların kayıtlar ekranında gözüktüğü kutucukların köşelerinin ne kadar yuvarlandığı */
+    box-shadow: 0px 4px 10px #FBF2C0;
+
+}
+
+.card__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+
+.card__text {
+    border-top: 1px solid #FBF2C0; /* kayıtlı notların kayıtlar ekranında gözüktüğü kutucukların içindeki çizginin rengi */
+    width: inherit;
+    display: flex;
+    padding: 50px 0 20px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.card__title {
+    padding: 0 20px;
+    text-align: center;
+}
+.card__subtitle {
+    padding: 0 20px;
+    text-align: center;
+
+}
+
+.card__img {
+    padding: 30px;
+}
+
+.creat__link {
+    display: block;
+    width: inherit;
+    height: inherit;
+    background: url(../img/plus.svg) no-repeat;
+    background-size: 200px 200px;
+    background-position: center;
+}
+
+.card--creat:hover,
+.card:hover {
+    box-shadow: 0px 4px 10px #E34A6F;
+}
+
+.creat-form {
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.form__card {
+    width: 40%;
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    background: #7880B5; /* yeni not oluştururkenki kutucuğun rengi*/
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px #FBF2C0;
+}
+
+.form__inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.form__inputs label {
+    width: 80%;
+}
+
+.form__input {
+    background: #FBF2C0;
+    border-radius: 10px;
+    padding: 10px;
+    height: 30px;
+    color: #F5A3B0; /* yeni not oluştururken üst ve alt başlık ve giriş sayfasındaki boşluklara yazılanların rengi */
+    font: inherit;
+    border: none;
+    width: 94%;
+}
+
+.form__card label {
+    width: 80%;
+}
+
+.form__text {
+    background: #FBF2C0;
+    border-radius: 10px;
+    padding: 10px;
+    color: #F5A3B0; /* yeni not oluştururken metnin rengi  */
+    font: inherit;
+    border: none;
+    width: 94%;
+}
+
+.form__button {
+    border: 1px solid #FBF2C0;
+    background: #E34A6F;
+    border-radius: 10px;
+    color: #FBF2C0; /* yeni not oluştururken en alttaki oluştur yazan buton  */
+    padding: 10px;
+    font: inherit;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form__button:hover {
+    color: #E34A6F; /* yeni not oluştururken en alttaki oluştur yazan butonun üstüne gelince yazının değiştiği renk */
+    background:  #FBF2C0; /* arkaplanın değiştiği renk */
+    border: 2px solid #E34A6F; /* kenarların değiştiği renk */
+}
+
+.main {
+    padding: 0 5%;
+}
+
+.main__block {
+    background: #7880B5; /* kayıtlı notlara bakarkenki kutucuğun rengi */
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px #FBF2C0;
+    padding: 30px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main__text {
+    line-height: 30px;
+    margin-bottom: 40px;
+    white-space: pre-wrap;
+    align-self: flex-start;
+}
+
+.main__link {
+    display: block;
+    border: 1px solid #FBF2C0;
+    background: #E34A6F;
+    border-radius: 10px;
+    color: #FBF2C0; /* kayıtlı bir nota bakarken alttaki kayıtlara geri dön tuşunun rengi */
+    padding: 15px 10px;
+    font: inherit;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.main__link:hover {
+    color: #E34A6F; /* yeni not oluştururken en alttaki oluştur yazan butonun üstüne gelince yazının değiştiği renk */
+    background:  #FBF2C0; /* arkaplanın değiştiği renk */
+    border: 2px solid #E34A6F; /* kenarların değiştiği renk */
+}
+
+
+.main-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 30%;
+    padding: 50px 30px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    background: #7880B5; /* giriş sayfasındaki giriş ve kayıt seçeneklerinin olduğu kutucuğun rengi */
+    border-radius: 50px;
+    box-shadow: #FBF2C0;
+}
+
+
+.login label {
+    width: 60%;
+}
+
+
+.reg__link {
+    height: fit-content;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.error {
+    font-size: 15px;
+    color: #65DEF1; /* yanlış şifre veya isim girince yukarıda yazan incorrect yazısının rengi*/
+}
+
+.login__link:hover {
+    color: #E34A6F;
+}
