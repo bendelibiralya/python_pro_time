@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi ailesi */
+    font-size: 15px; /* <p></p> etiketindeki ana yazının boyutu */
+    background-color: #ffebbb; /* Web sayfasının arka plan rengi */
+    color: #d67cd0; /* Metin rengi */
+}
+
+h1 {
+    color: #03a97d; /* Başlık rengi */
+    font-size: 25px; /* Başlık yazı tipi boyutu */
+    font-family: Georgia, serif; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+h2 {
+    color:#01c0dd;
+    font-size: 18px;
+    font-family: Georgia, serif;
+}
+
+@keyframes color-change {
+    0% {
+      color: #f200ff;
+    }
+  
+    50% {
+      color: #0062ff;
+    }
+  
+    100% {
+      color: #f200ff;
+    }
+}
+
+a:hover {
+    animation: color-change 3s infinite;
+}
+/* hover yazınca sadece o yazının üstüne gelince renk değişimi oluyor */
+
+.header__one {
+    color:#a9a603
+}
